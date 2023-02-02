@@ -1,0 +1,59 @@
+@import url("./reset.css");
+
+body{
+
+    display: flex;
+    font-family:Helvetica, sans-serif;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.info, 
+.img{
+    width: 30%;
+
+}
+.info .info__sub{
+    font-size: 9px;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+.info .info__title{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.info .info_desc{
+    font-size: 12px;
+    margin-bottom: 20px;
+    line-height: 1.5rem;
+    color: rgb(104, 99, 99);
+}
+.info .buttons{
+    display: flex;
+    gap:10px;
+}
+.info .buttons li button{
+   background-color: white;
+   border-radius: 3px;
+   padding: 7px 10px;
+   border-color: black;
+   font-size: 10px;
+   font-weight: 500;
+}
+.info .buttons li .sales{
+    background-color: #786eff;
+  border-color: #786eff;
+  color: white;
+ }
+
+ .img .img--container{
+     position: relative;
+     height: 350px;
+
+     
+ }
+ .img .img--container img{
+    position: absolute;
+     height: 250px;
+     width: 250px;
+    bottom: 0px;
+}
