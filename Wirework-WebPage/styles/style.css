@@ -104,10 +104,15 @@ body{
     display: flex;
     height: 200px;
     font-size: 10px;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     gap:10px;
     text-align: center;
+    
+}
+.hero .options-container .options .option-item,
+.hero .options-container-second .options .option-item{
+    width: 200px;
     
 }
 .hero .options-container .options .option-item .item__icon i{
