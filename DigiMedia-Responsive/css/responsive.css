@@ -1,0 +1,61 @@
+@media  screen and (max-width: 600px) {
+    #home .container .navbar.navbar-expand-lg.navbar-light{
+        justify-content: space-around;
+        padding: 10px;
+    }
+    #home .container{
+        justify-content: space-around;
+    }
+
+    #home .container .navbar.navbar-expand-lg.navbar-light .navbar-brand{
+     margin: 0px;
+    }
+
+    #home .container-fluid.hero img{
+        display: none;
+    }
+    #home .container-fluid.hero .container h1{
+       margin: 20px;
+       text-align: center;
+    }
+    #home .container-fluid.hero .container p{
+        text-align: center;
+     }
+     #home .container-fluid.hero .container .hero-btns{
+        margin-bottom: 50px;
+     }
+     #home .container-fluid.hero .container .hero-btns a,
+     #about-us .container-fluid .container .hero-btns.service-btn a{
+        display: block;
+        width: 60%;
+       text-align: center;
+       margin: 0 auto;
+     }
+     #about-us .col-12.col-sm-12.col-lg-4.service-txt{
+         text-align: center;
+     }
+     #about-us .container-fluid .container .hero-btns.service-btn{
+       margin-bottom: 50px;
+    }
+    #about-us .container-fluid .container .row{
+        flex-direction: column;
+     }
+     #about-us .container-fluid .container .row .col-12.col-sm-6.col-lg-4{
+        max-width: 100%;
+     }
+     body .about{
+         text-align: center;
+     }
+     #contact-us{
+         text-align: center;
+     }
+     #contact-us .container .hero-btns.contact-btn{
+         display: none;
+     }
+
+     footer .container .row .contact-nav li{
+         display: block;
+     }
+
+   
+}
