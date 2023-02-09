@@ -1,126 +1,187 @@
 @import url('./reset.css');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,700;1,300&display=swap');
 
-:root{
+
+:root {
     --clr-grey-bg: #e3e3e3;
-    
-}
-body{
-    font-family: 'Raleway', sans-serif;
-}
-.article{
-    height: 30%;
-    background-color: var(--clr-grey-bg);
-    overflow: hidden;
-    margin:30px ;
 }
 
-.article .nav{
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.article {
+    background-color: var(--clr-grey-bg);
+    margin: 30px;
+    height: 450px;
+}
+
+.article.one {
+    height: 480px
+}
+
+.article .nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin: 15px;
+    padding: 10px;
 }
-.article .nav .menu{
-font-size: 13px;
-padding: 0 10px;
+
+.article .nav .menu {
+    font-size: 13px;
+    padding: 10px 10px;
 }
-.article .nav .fa-solid.fa-bars{
+
+.article .nav .fa-solid.fa-bars {
     font-size: 20px;
 }
-.article .container-img-desc{
-    display: flex;
-}
-.article .container-img-desc .article__desc{
-    margin: 30px 0px;
-    padding : 50px 75px;
-    width: 50%;
 
+.article .container-img-desc {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: 450px;
 }
+
+.article.one .container-img-desc {
+    grid-auto-rows: 425px;
+}
+
+.article .container-img-desc .article__desc {
+    margin: 30px 0px;
+    padding: 50px 75px;
+    max-height: 450px;
+    overflow: hidden;
+}
+
 .desc__title {
     font-size: 25px;
     margin-bottom: 15px;
 }
-.bold{
+
+.bold {
     font-weight: bold;
 }
+
 .article .container-img-desc .article__desc .desc__info {
     font-size: 15px;
     font-style: italic;
-  font-family:Georgia, 'Times New Roman', Times, serif;
-  font-weight: 300;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 300;
     letter-spacing: 0.5px;
     line-height: 20px;
-    
-}
-.article.one .container-img-desc .img-container{
-    padding : 50px 75px 0px 30px;
-    width: 50%;
-    
-
 }
 
-.article.one .container-img-desc .img-container img{
- 
+
+.img-container img {
     width: 100%;
     height: 100%;
-    object-fit:cover;
-
+    object-fit: contain;
 }
 
 
 /* second article*/
-.article.two .container-img-desc{
-    flex-direction: row-reverse;
-}
 
-.article.two .hr-line{
-    
-    width: 40px; 
-    text-align: center; 
-    border-bottom: 1px solid #000; 
+.article.two .hr-line {
+    width: 40px;
+    text-align: center;
+    border-bottom: 1px solid #000;
     line-height: 0.1em;
-    margin: 10px  15px 30px 0px; 
+    margin: 15px 15px 30px 0px;
 }
 
-.article.two .title-container{
+.article.two .title-container {
     display: flex;
 }
 
-.empty{
+.empty {
     color: var(--clr-grey-bg);
     height: 20px;
 }
 
-
-.article.two .container-img-desc .img-container{
-    padding : 50px 30px 50px 75px;
-    width: 50%;
-
+.article.two .container-img-desc {
+    margin: auto 0px;
 }
-.article.two .container-img-desc .img-container img{
- 
+
+.article.two .container-img-desc .img-container {
+    padding: 20px;
+}
+
+.article.two .container-img-desc .img-container img {
     width: 100%;
     height: 100%;
-    object-fit:contain;
-
+    object-fit: contain;
 }
-.article.two .container-img-desc .article__desc{
-  padding-left: 40px;
 
+.article.two .container-img-desc .article__desc {
+    padding-left: 40px;
+    margin: 0px;
 }
-.article.two .container-img-desc .desc__info{
- 
+
+.article.two .container-img-desc .desc__info {
     margin-bottom: 35px;
-
 }
-.article.two ul{
+
+.article.two ul {
     display: flex;
     gap: 20px
-    
 }
-.article.two .box{
+
+.article.two .box {
     background-color: grey;
     color: white;
     padding: 10px;
 }
+
+/* article three */
+
+.article.three img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* article four */
+.article.four .container-img-desc .img-container img {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+}
+
+.article.four .container-img-desc .img-container {
+    display: flex;
+}
+
+/* article five */
+.article.five .img-container {
+    display: flex;
+    align-items: center;
+    height: 450px;
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.article.five .img {
+    display: inline;
+    object-fit: contain;
+}
+
+.article.five .img.balloon {
+    height: 80%;
+    width: 80%;
+    z-index: 3;
+
+}
+
+.article.five .img.bridge {
+    height: 60%;
+    width: 60%;
+    margin-right: -30%;
+}
+
+.article.five .img.river {
+    height: 60%;
+    width: 60%;
+    margin-left: -30%;
+}
+/* article six */
