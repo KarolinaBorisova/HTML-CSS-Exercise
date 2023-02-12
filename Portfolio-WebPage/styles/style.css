@@ -16,6 +16,25 @@ body {
     height: 450px;
 }
 
+/* 
+---------------------
+    Divider
+----------- ---------
+*/
+.divider {
+    background-color: #000;
+}
+
+.divider.divider--vertical {
+    width: 1px;
+    height: 4rem;
+}
+
+.divider.divider--horisontal {
+    height: 1px;
+    width: 4rem;
+}
+
 .article.one {
     height: 480px
 }
@@ -53,9 +72,14 @@ body {
     overflow: hidden;
 }
 
+.article .container-img-desc .article__desc .desc__info {
+    margin-bottom: 10px;
+}
+
 .desc__title {
     font-size: 25px;
-    margin-bottom: 15px;
+   margin-bottom: 15px;
+   margin-top: 15px;
 }
 
 .bold {
@@ -82,11 +106,18 @@ body {
 /* second article*/
 
 .article.two .hr-line {
-    width: 40px;
+    /* width: 40px;
     text-align: center;
     border-bottom: 1px solid #000;
     line-height: 0.1em;
-    margin: 15px 15px 30px 0px;
+    margin: 15px 15px 30px 0px; */
+    width: 3rem;
+    height: 1px;
+    background-color: black;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto; 
+    margin-right: 10px;
 }
 
 .article.two .title-container {
@@ -184,4 +215,68 @@ body {
     width: 60%;
     margin-left: -30%;
 }
+
 /* article six */
+.article.six{
+    text-align: center;
+    
+}
+.article.six .container-desc{
+    padding: 30px;
+    margin: 0 auto;
+  max-width: 900px;
+   
+}
+.article.six .container-desc .desc__info{
+ font-size: 13px;
+ font-style: italic;
+ line-height: 20px;
+ width: 80%;
+margin: 0 auto;
+ margin-bottom: 30px;
+}
+
+.article.six .container-desc .form.message{
+    width: 60%;
+    margin: 0 auto;
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+    "email subject"
+    "msg msg"
+    "btn btn";
+}
+.article.six .container-desc .form.message > *{
+   border: solid 1px black;
+   padding: 8px 10px;
+}
+
+.article.six .container-desc .form.message .email{
+    grid-area: email;
+}
+.article.six{
+    margin-bottom: 0px;
+}
+
+/* footer */
+
+.footer{
+    background-color:var(--clr-grey-bg);
+    font-size: 10px;
+    padding: 10px;
+    margin: 0px 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.article.six .container-desc .form.message .subject{
+    grid-area: subject;
+}
+.article.six .container-desc .form.message .message{
+    grid-area: msg;
+}
+.article.six .container-desc .form.message .btn{
+    grid-area: btn;
+    background-color: black;
+    color: white;
+}
