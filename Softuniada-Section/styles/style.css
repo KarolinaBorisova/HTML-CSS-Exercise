@@ -1,0 +1,59 @@
+@import url('./reset.css');
+
+:root {
+    --clr-orange: #ffa200;
+}
+
+
+.article {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 5px ;
+
+    width: 70%;
+    height: 300px;
+    margin: 0 auto;
+    border-radius: 5px ;
+    overflow: hidden;
+    box-shadow: 0px 5px 13px 1px rgba(0,0,0,0.38);
+}
+.article.main {
+    margin-top: 30px;
+    box-shadow: 0px -5px 13px 1px rgba(0,0,0,0.38);
+}
+
+.article.main .header{
+    padding: 0 20px;
+    background-color: var(--clr-orange);
+    height: 20%;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    
+}
+.header .date{
+    margin-left: 15px;
+    
+}
+
+.header i{
+    font-size: 25px;
+}
+
+.article .container{
+    padding: 30px 20px;
+}
+.article .container .time{
+    color: gray;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.article .container h2{
+    font-size: 23px;
+    margin-bottom: 25px;
+    color: black;
+    font-weight: 500;
+}
+.article .container p{
+    font-size: 20px;
+}
