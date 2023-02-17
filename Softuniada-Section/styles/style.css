@@ -14,11 +14,12 @@
     margin: 0 auto;
     border-radius: 5px ;
     overflow: hidden;
-    box-shadow: 0px 5px 13px 1px rgba(0,0,0,0.38);
+    box-shadow: 0px 10px 15px 1px rgba(0,0,0,0.38);
 }
 .article.main {
     margin-top: 30px;
-    box-shadow: 0px -5px 13px 1px rgba(0,0,0,0.38);
+    box-shadow: 0px -10px 15px 1px rgba(0,0,0,0.38);
+    border-bottom: 2px solid rgb(189, 187, 187);
 }
 
 .article.main .header{
