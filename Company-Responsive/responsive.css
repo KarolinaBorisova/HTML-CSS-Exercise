@@ -1,0 +1,57 @@
+:root{
+    --pading-main: 0 30px;
+    
+}
+
+@media screen and (max-width:600px) {
+    
+    .hero-head{
+        background-image: none;
+        background-color: black;
+        text-align: center;
+        min-height: 600px;
+        
+    }
+    .main-head{
+       
+        background-color: black;
+        
+    }
+    .main-nav{
+        display: none;
+    }
+    .wrapper{
+        width: 100%;
+        margin-bottom: 0px;
+        
+    }
+    .wrapper h1{
+        margin: 10 20px; 
+        font-size: 30px;
+        float:none;
+    }
+    .wrapper .goal{
+        margin: 0 20px;
+        max-width: unset;
+        float: none;
+    }
+    .wrapper .content-wrap.two-col{
+        flex-direction: column;
+        margin: 0;
+        text-align: center;
+    }
+    .button{
+        display: block;
+    }
+    .main-foot .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .main-foot .bottom .copyright {
+        float: none;
+    }
+
+}
